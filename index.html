@@ -1,195 +1,360 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <link rel="shortcut icon" href="logo js.png" type="image/x-icon">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" href="swd logo.png">
+    <title>Links</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <title>JoseSawyoDesigner</title>
-</head>
+    <style>
+        :root {
+            --bg-color: #0d0c1d;
+            --text-color: #fff;
+            --accent-color: #8e32ff;
+            --button-bg: #1e1e2f;
+            --glow-opacity: 0.25;
+        }
 
-<body>
-    <div class="content">
-        <header>
-            <img src="perfil.png" alt="">
-            <h1>JS DESIGNER</h1>
-            <p>Olá, me chamo Jose Sawyo, atualmente eu atuo como designer gráfico</p>
-            <p>Me apaixonei pela área em setembro de 2023 e, de lá para cá, não consegui mais parar</p>
-            <p>Meu foco é destacar meus clientes do seu concorrente, promovendo uma comunicação visual limpa e estilosa.</p>
-        </header>
-        </header>
-
-        <section class="botoes-links">
-            <a href="https://www.behance.net/saviomendes1" target="_blank" class="link"> 
-                <button class="desgrade">
-                    <span>BEHANCE </span>
-                    <i class="fab fa-behance"></i>
-                </button>
-            </a>
-
-            <a href="https://wa.me/+5588988089709" target="_blank" class="link"> 
-                <button class="desgrade">
-                    <span>WHATSAPP </span>
-                    <i class="fab fa-whatsapp"></i>
-                </button>
-            </a>
-
-            <a href="https://www.instagram.com/js.designer.psd?igsh=MWV6dWJ0Mzk5ZnRveg==" target="_blank" class="link"> 
-                <button class="desgrade">
-                    <span>INSTAGRAM </span>
-                    <i class="fab fa-instagram"></i>
-                </button>
-            </a>
-
-            <a href="https://www.tiktok.com/@js_designer_psd?_t=8j5dBx6lOr8&_r=1" target="_blank" class="link"> 
-                <button class="desgrade">
-                    <span>TIK TOK </span>
-                    <i class="fab fa-tiktok"></i>
-                </button>
-            </a>
-
-            <a href="https://www.facebook.com/sawyo.mendes.12?mibextid=ZbWKwL" target="_blank" class="link"> 
-                <button class="desgrade">
-                    <span>FACEBOOK </span>
-                    <i class="fab fa-facebook"></i>
-                </button>
-            </a>
-
-            <a href="https://pin.it/Uhs0hcrnq" target="_blank" class="link"> 
-                <button class="desgrade">
-                    <span>PINTEREST </span>
-                    <i class="fab fa-pinterest"></i>
-                </button>
-            </a>
-
-            <a href="https://t.me/+1P7QWQG5ImQ0NzJh" target="_blank" class="link"> 
-                <button class="desgrade">
-                    <span>TELEGRAM </span>
-                    <i class="fab fa-telegram"></i>
-                </button>
-            </a>
-        </section>
-
-        <footer>
-            <li><a href="mailto:jose.sawyo@gmail.com" class="link"><i class="fas fa-envelope"></i> Mensagens</a></li>
-        </footer>
-    </div>
-
-    <style> 
-        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Poppins:wght@600&display=swap');
+        [data-theme="light"] {
+            --bg-color: #f5f5f7;
+            --text-color: #0d0c1d;
+            --accent-color: #8e32ff;
+            --button-bg: #e0e0e5;
+            --glow-opacity: 0.15;
+        }
 
         * {
-            margin: 0px;
-            padding: 0px;
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Inter', sans-serif;
+            transition: background-color 0.5s ease, color 0.3s ease;
         }
 
         body {
-           background-image: url(bg\ para\ page\ de\ links.jpg);
-            height: 100%;
-            background-attachment: fixed;
-        }
-
-        .desgrade {
-            background-color: #8e32ff;
-            border-bottom: 10px solid #8e32ff;
-            color: #ffffff;
-            
-        }
-        a {
-            text-decoration: none;
-            color: aliceblue;
-        }
-        .content {
-            height: 100%;
-            max-width: 550px;
-            margin: 0 auto;
-            flex-direction: column;
-            justify-content: center;
-            padding: 20px;
-            color: aliceblue;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-        header img {
-            max-width: 390px;
-            margin-bottom: 20px;
-            width: 100%;
-            max: width 100%;
-        }
-        header h1 {
-            font-size: 5em;
-            font-family: 'Oswald', sans-serif;
-            margin-bottom: 40px;
-            color: #8e32ff;
-        }
-
-        section.botoes-links {
+            background: radial-gradient(circle, rgba(142,50,255,var(--glow-opacity)) 0%, transparent 70%), var(--bg-color);
+            color: var(--text-color);
+            padding: 1rem;
             display: flex;
             flex-direction: column;
-            gap: 30px;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow-x: hidden;
         }
-        a.link button {
-            color: #ffffff;
+
+        .glow {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100vw;
+            height: 100vh;
+            background: radial-gradient(circle, rgba(142,50,255,var(--glow-opacity)) 0%, transparent 70%);
+            filter: blur(100px);
+            z-index: 0;
+            pointer-events: none;
+            animation: pulse 15s infinite alternate;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 0.7; }
+            100% { opacity: 1; }
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
             width: 100%;
-            padding: 30px 30px;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--accent-color);
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 20px rgba(142,50,255,0.4);
+            opacity: 0;
+            animation: fadeIn 1s ease 0.5s forwards;
+            position: relative;
+            z-index: 1;
+            transition: all 0.3s ease;
+        }
+
+        .profile-pic:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 25px rgba(142,50,255,0.6);
+        }
+
+        h1, h2 {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        #typing {
+            font-size: clamp(1.5rem, 5vw, 2.5rem);
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+        }
+
+        h2 {
+            font-weight: normal;
+            margin-bottom: 1.5rem;
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            opacity: 0;
+            animation: fadeIn 1s ease 1.5s forwards;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+
+        p {
+            max-width: 90%;
+            text-align: center;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+            position: relative;
+            z-index: 1;
+            font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideUp 0.8s ease 1.8s forwards;
+        }
+
+        @keyframes slideUp {
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .buttons-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 300px;
+            gap: 0.8rem;
+        }
+
+        .button {
+            background: var(--button-bg);
+            color: var(--text-color);
+            padding: 0.9rem;
+            border: none;
+            border-radius: 12px;
+            width: 100%;
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            border-radius: 30px;
-            font-size: 1.2em;
-            cursor: pointer;
+            justify-content: center;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 1;
+            font-size: clamp(0.9rem, 3vw, 1rem);
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            text-decoration: none !important;
+        }
+
+        .button:nth-child(1) { animation: slideUp 0.8s ease 2.1s forwards; }
+        .button:nth-child(2) { animation: slideUp 0.8s ease 2.3s forwards; }
+        .button:nth-child(3) { animation: slideUp 0.8s ease 2.5s forwards; }
+        .button:nth-child(4) { animation: slideUp 0.8s ease 2.7s forwards; }
+
+        .button:hover {
+            transform: translateY(-3px) scale(1.03);
+            box-shadow: 0 6px 12px rgba(142,50,255,0.3);
+        }
+
+        .button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(142,50,255,0.2), transparent);
             transition: 0.5s;
-        
         }
 
-        a.link button :hover i{
-            color: #ffffff;
-
-
+        .button:hover::before {
+            left: 100%;
         }
 
-      
-
-
-
-        a.link button:hover {
-            transform: scale(1.02);
+        .button i {
+            font-size: 1.2rem;
+            margin-left: 0.8rem;
+            transition: transform 0.3s ease;
         }
-        a.link button i {
-            font-size: 1.7em;
-}
-        footer {
-            text-align: center;
-            flex-direction: column;
-            gap: 20px;
+
+        .button:hover i {
+            transform: scale(1.2);
+        }
+
+        #theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--button-bg);
+            color: var(--text-color);
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
             display: flex;
-            padding: 8px 8px;
-            margin-top: 100px;
-        }
-        footer li{
-            background-color: #8e32ff;
-            padding: 10px 0;
-            list-style: none;
-            border-radius: 7px;
-        }
-        
-
-        .btn-footer {
-            background-color: #8e32ff;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 10;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            text-decoration: none;
         }
 
-        @media screen and (max-width: 720px) {
-            .content {
-                display: block;
-                background-image: url(./imagens/BG.jpg);
+        #theme-toggle:hover {
+            transform: scale(1.1) rotate(30deg);
+        }
 
+        .cursor {
+            display: inline-block;
+            width: 8px;
+            height: 1.2em;
+            background: var(--accent-color);
+            margin-left: 4px;
+            animation: blink 0.7s infinite;
+            vertical-align: middle;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 1rem 0.8rem;
             }
             
+            .profile-pic {
+                width: 120px;
+                height: 120px;
+                margin-bottom: 1rem;
+            }
+            
+            .button {
+                padding: 0.8rem;
+            }
+
+            #theme-toggle {
+                top: 15px;
+                right: 15px;
+                width: 36px;
+                height: 36px;
+            }
         }
     </style>
+</head>
+<body>
+    <div class="glow"></div>
+    <button id="theme-toggle" title="Alternar tema">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <div class="content">
+        <img src="2025-foto-p.jpg" alt="Foto de Jose Sawyo" class="profile-pic">
+
+        <h1 id="typing"></h1>
+        <h2>Oi, eu sou o José Sawyo</h2>
+        <p>
+            Design que fala, conecta e diferencia.
+            Dando forma ao que sua marca tem de único.
+        </p>
+
+        <div class="buttons-container">
+            <a class="button" href="https://wa.me/5588988089709" target="_blank">
+                WhatsApp <i class="fab fa-whatsapp"></i>
+            </a>
+            <a class="button" href="https://www.instagram.com/sawyo_designer?igsh=MTQyY2h6b3dmZzg1aQ==" target="_blank">
+                Instagram <i class="fab fa-instagram"></i>
+            </a>
+            <a class="button" href="https://www.behance.net/saviomendes1" target="_blank">
+                Behance <i class="fab fa-behance"></i>
+            </a>
+            <a class="button" href="mailto:jose.sawyo@gmail.com">
+                E-mail <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        const text = "Sawyo Designer";
+        let i = 0;
+        function type() {
+            if (i < text.length) {
+                document.getElementById("typing").innerHTML = text.substring(0, i+1) + '<span class="cursor"></span>';
+                i++;
+                setTimeout(type, 120);
+            } else {
+                document.getElementById("typing").innerHTML = text + '<span class="cursor"></span>';
+                setTimeout(() => {
+                    document.querySelector('#typing .cursor').style.animation = 'none';
+                }, 1000);
+            }
+        }
+        window.onload = type;
+
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = themeToggle.querySelector('i');
+        
+        themeToggle.addEventListener('click', () => {
+            document.body.dataset.theme = document.body.dataset.theme === 'light' ? 'dark' : 'light';
+            themeIcon.className = document.body.dataset.theme === 'light' ? 'fas fa-sun' : 'fas fa-moon';
+            
+            const ripple = document.createElement('span');
+            ripple.style.position = 'absolute';
+            ripple.style.borderRadius = '50%';
+            ripple.style.backgroundColor = 'rgba(142,50,255,0.3)';
+            ripple.style.transform = 'scale(0)';
+            ripple.style.animation = 'ripple 0.6s linear';
+            ripple.style.pointerEvents = 'none';
+            
+            themeToggle.appendChild(ripple);
+            
+            setTimeout(() => {
+                ripple.remove();
+            }, 600);
+        });
+
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes ripple {
+                to {
+                    transform: scale(4);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+
+        document.addEventListener('mousemove', (e) => {
+            const glow = document.querySelector('.glow');
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+            glow.style.transform = `translate(calc(-50% + ${(x - 0.5) * 20}px), calc(-50% + ${(y - 0.5) * 20}px)`;
+        });
+    </script>
 </body>
 </html>
